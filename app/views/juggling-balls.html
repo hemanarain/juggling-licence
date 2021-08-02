@@ -18,8 +18,8 @@
         {% from "govuk/components/radios/macro.njk" import govukRadios %}
 
 {{ govukRadios({
-  idPrefix: "how-many-balls",
-  name: "how-many-balls",
+  idPrefix: "juggling-balls",
+  name: "juggling-balls",
   fieldset: {
     legend: {
       text: "How many balls can you juggle?",
@@ -31,17 +31,17 @@
     {
       value: "3 or more",
       text: "3 or more",
-      checked: checked("how-many-balls", "3 or more")
+      checked: checked("juggling-balls", "3 or more")
     },
     {
       value: "1 or 2",
       text: "1 or 2",
-      checked: checked("how-many-balls", "1 or 2")
+      checked: checked("juggling-balls", "1 or 2")
     },
     {
       value: "None - I cannot juggle",
       text: "None - I cannot juggle",
-      checked: checked("how-many-balls", "None - I cannot juggle")
+      checked: checked("juggling-balls", "None - I cannot juggle")
     }
   ]
 }) }}
